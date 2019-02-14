@@ -6,14 +6,14 @@ import java.util.HashMap;
 public class FullParameters {
     public String method;
     public String url;
-    public AbstractMap<String, String> headerParametros;
-    public AbstractMap<String, String> parametros;
+    public AbstractMap<String, String> headerParameters;
+    public AbstractMap<String, String> params;
 
-    public FullParameters(String method, String url, HashMap headerParametros, HashMap parametros){
+    public FullParameters(String method, String url, HashMap headerParameters, HashMap params){
         this.method = method;
         this.url = url;
-        this.headerParametros = headerParametros;
-        this.parametros = parametros;
+        this.headerParameters = headerParameters;
+        this.params = params;
 
 
     }

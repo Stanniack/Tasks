@@ -16,7 +16,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.devmasterteam.tasks.R;
-import com.example.mateus.mytasks.infra.InternetNotAvailable;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         try {
-            if (id == R.id.nav_all_tasks) {
+            if (id == R.id.all_tasks_nav) {
                 fragment = TaskListFragment.newInstance();
             } else if (id == R.id.nav_next_seven_days) {
                 fragment = TaskListFragment.newInstance();
